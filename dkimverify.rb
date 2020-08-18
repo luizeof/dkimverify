@@ -84,7 +84,7 @@ module DkimVerify
         # cf. https://github.com/emboss/krypt/blob/c804f736d4dbaa4425014d036d2e68d8ee66d559/lib/krypt/asn1/common.rb
         #       SHA1       = algorithm_null_params('1.3.14.3.2.26')
         #       SHA256 = algorithm_null_params('2.16.840.1.101.3.4.2.1')    
-        OpenSSL::ASN1::ObjectId.register('1.3.14.3.2.26', 'sha1', 'HASHID_SHA1')
+        # OpenSSL::ASN1::ObjectId.register('1.3.14.3.2.26', 'sha1', 'HASHID_SHA1')
         OpenSSL::ASN1::ObjectId.register('2.16.840.1.101.3.4.2.1', 'sha256', 'HASHID_SHA256')
         HASHID_SHA1   = OpenSSL::ASN1::ObjectId.new('sha1')
         HASHID_SHA256 = OpenSSL::ASN1::ObjectId.new('sha256')
