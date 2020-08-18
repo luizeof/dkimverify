@@ -85,9 +85,9 @@ module DkimVerify
         #       SHA1       = algorithm_null_params('1.3.14.3.2.26')
         #       SHA256 = algorithm_null_params('2.16.840.1.101.3.4.2.1')    
         # OpenSSL::ASN1::ObjectId.register('1.3.14.3.2.26', 'sha1', 'HASHID_SHA1')
-        OpenSSL::ASN1::ObjectId.register('2.16.840.1.101.3.4.2.1', 'sha256', 'HASHID_SHA256')
+        # OpenSSL::ASN1::ObjectId.register('2.16.840.1.101.3.4.2.1', 'sha256', 'HASHID_SHA256')
         # HASHID_SHA1   = OpenSSL::ASN1::ObjectId.new('sha1')
-        HASHID_SHA256 = OpenSSL::ASN1::ObjectId.new('sha256')
+        # HASHID_SHA256 = OpenSSL::ASN1::ObjectId.new('sha256')
 
         class DkimError < DkimVerifyError; end
         class DkimTempFail < DkimError; end
